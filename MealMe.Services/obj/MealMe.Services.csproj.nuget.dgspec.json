@@ -1,36 +1,98 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {}
+    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {}
   },
   "projects": {
-    "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {
+    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
-        "projectName": "MealMe.Services",
-        "projectPath": "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
-        "packagesPath": "C:\\Users\\Kody\\.nuget\\packages\\",
-        "outputPath": "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\obj\\",
+        "projectUniqueName": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj",
+        "projectName": "MealMe.Data",
+        "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj",
+        "packagesPath": "C:\\Users\\Taous\\.nuget\\packages\\",
+        "outputPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kody\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Taous\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
+        "projectName": "MealMe.Models",
+        "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
+        "packagesPath": "C:\\Users\\Taous\\.nuget\\packages\\",
+        "outputPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taous\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj": {
+                "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,7 +120,67 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
+        "projectName": "MealMe.Services",
+        "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
+        "packagesPath": "C:\\Users\\Taous\\.nuget\\packages\\",
+        "outputPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taous\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj": {
+                "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj"
+              },
+              "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
+                "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

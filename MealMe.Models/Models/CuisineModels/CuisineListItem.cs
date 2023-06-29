@@ -7,6 +7,8 @@ namespace MealMe.Models.Models.CuisineModels
 {
     public class CuisineListItem
     {
-        
+        public int Id { get; set; } 
+
+        public string Name { get; set; }
     }
 }

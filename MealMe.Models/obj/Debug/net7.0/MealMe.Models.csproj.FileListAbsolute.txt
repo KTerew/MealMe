@@ -1,0 +1,15 @@
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.csproj.AssemblyReference.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.AssemblyInfoInputs.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.AssemblyInfo.cs
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.csproj.CoreCompileInputs.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\bin\Debug\net7.0\MealMe.Models.deps.json
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\bin\Debug\net7.0\MealMe.Models.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\bin\Debug\net7.0\MealMe.Models.pdb
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\bin\Debug\net7.0\MealMe.Data.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\bin\Debug\net7.0\MealMe.Data.pdb
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.csproj.CopyComplete
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\refint\MealMe.Models.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\MealMe.Models.pdb
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Models\obj\Debug\net7.0\ref\MealMe.Models.dll
