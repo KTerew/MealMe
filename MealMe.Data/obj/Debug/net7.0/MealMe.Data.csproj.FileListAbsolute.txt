@@ -1,0 +1,12 @@
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\bin\Debug\net7.0\MealMe.Data.deps.json
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\bin\Debug\net7.0\MealMe.Data.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\bin\Debug\net7.0\MealMe.Data.pdb
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.csproj.AssemblyReference.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.AssemblyInfoInputs.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.AssemblyInfo.cs
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.csproj.CoreCompileInputs.cache
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\refint\MealMe.Data.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\MealMe.Data.pdb
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.Data\obj\Debug\net7.0\ref\MealMe.Data.dll
