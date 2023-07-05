@@ -60,11 +60,13 @@ namespace MealMe.Services.Services.CuisineServices
 
         public async Task<bool> UpdateCuisine(CuisineEdit model)
         {
-            var cuisine = await _context.Cuisines.SingleOrDefaultAsync(x => x.Id == model.Id);
+            var cuisine = await _context.Cuisines.AsNoTracking().SingleOrDefaultAsync(x => x.Id == model.Id);
 
             if (cuisine is null) return false;
 
-            _context.Cuisines.Remove(cuisine);
+            var conversion = _mapper.Map<CuisineEdit,Cuisine>(model);
+
+            _context.Cuisines.Update(conversion);
 
             return await _context.SaveChangesAsync() > 0;
         }
