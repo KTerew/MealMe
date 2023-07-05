@@ -86,3 +86,5 @@ C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\obj\Debug\net7.0\refint\MealMe.API.
 C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\obj\Debug\net7.0\MealMe.API.pdb
 C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\obj\Debug\net7.0\MealMe.API.genruntimeconfig.cache
 C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\obj\Debug\net7.0\ref\MealMe.API.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\bin\Debug\net7.0\AutoMapper.dll
+C:\elevenFiftyBlueBadge165\MealMe\MealMe.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

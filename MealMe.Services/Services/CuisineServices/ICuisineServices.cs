@@ -14,6 +14,6 @@ namespace MealMe.Services.Services.CuisineServices
         public Task<bool>UpdateCuisine(CuisineEdit model);
         public Task<bool>DeleteCuisine(int Id);
         public Task<CuisineDetail>GetCuisine(int id);
-        public Task<List<CuisineDetail>>GetCuisines();
+        public Task<List<CuisineListItem>>GetCuisines();
     }
 }
