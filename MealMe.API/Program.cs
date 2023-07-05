@@ -1,4 +1,6 @@
 using MealMe.Data.MealMeContext;
+using MealMe.Services.Services.CuisineServices;
+using MealMe.Services.Services.MappingConfigurations;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MealMeDBContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<ICuisineServices,CuisineServices>();
+builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 
 var app = builder.Build();
 

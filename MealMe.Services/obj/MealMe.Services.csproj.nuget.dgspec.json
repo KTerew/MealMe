@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {}
+    "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {}
   },
   "projects": {
     "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj": {
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
+    "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
+        "projectUniqueName": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
         "projectName": "MealMe.Models",
-        "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
+        "projectPath": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj",
         "packagesPath": "C:\\Users\\Taous\\.nuget\\packages\\",
-        "outputPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\obj\\",
+        "outputPath": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Taous\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {
+    "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
+        "projectUniqueName": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
         "projectName": "MealMe.Services",
-        "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
+        "projectPath": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
         "packagesPath": "C:\\Users\\Taous\\.nuget\\packages\\",
-        "outputPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\obj\\",
+        "outputPath": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Taous\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -149,8 +149,8 @@
               "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj": {
                 "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Data\\MealMe.Data.csproj"
               },
-              "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
-                "projectPath": "C:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj"
+              "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj": {
+                "projectPath": "c:\\elevenFiftyBlueBadge165\\MealMe\\MealMe.Models\\MealMe.Models.csproj"
               }
             }
           }
@@ -164,6 +164,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

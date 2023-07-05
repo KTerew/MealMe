@@ -7,6 +7,7 @@ namespace MealMe.Models.Models.IngredientModels
 {
     public class IngredientListItem
     {
-        
+        public int Name {get; set;}
+        public int Price {get; set;}
     }
 }
