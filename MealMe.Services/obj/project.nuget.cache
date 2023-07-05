@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H3BKFjPl0wMQaqTAjk0JcbkbaTWBonq71BkWnprEZW7iPUDtbGuMD5UbrXWCagxfmX0D0HLr0OFmSa4OTBtoKg==",
+  "dgSpecHash": "b0bQPh3zo9Z0VkdFBYTiCZB3jkEnCJRe3KUVnqkgE1zDpqXLD9qM8v2jFm5KsKmPXzcIT5iWDQpy+SXbQ6G3dw==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\MealMe\\MealMe.Services\\MealMe.Services.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\kkilk\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
+    "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.5\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\kkilk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
