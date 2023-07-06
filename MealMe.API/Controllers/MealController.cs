@@ -40,7 +40,7 @@ namespace MealMe.API.Controllers
             return Ok(getMeals);
         }
 
-        [HttpGet]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetMeal(int id)
         {
             MealDetail getMeal = await _mealServices.GetMeal(id);
@@ -52,6 +52,14 @@ namespace MealMe.API.Controllers
         {
             bool updateMeal = await _mealServices.UpdateMeal(model);
             return Ok(updateMeal);
+        }
+
+        [HttpGet]
+        [Route("/randomMeal")]
+        public async Task<IActionResult> GetRandomMeal()
+        {
+            MealDetail getRandomMeal = await _mealServices.GetRandomMeal();
+            return Ok(getRandomMeal);
         }
     }
 }

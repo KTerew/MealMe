@@ -20,8 +20,8 @@ namespace MealMe.Models.Models.MealModels
         public int PrepTime { get; set; }
 
         public virtual Cuisine Cuisine { get; set; }
-        
-        public virtual List<Ingredient> Ingredients { get; set; }
+
+        // public virtual List<Ingredient> Ingredients { get; set; }
 
         // public double Price
         // {

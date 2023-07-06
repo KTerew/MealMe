@@ -13,5 +13,6 @@ namespace MealMe.Services.Services.MealServices
         Task<bool> DeleteMeal(int id);
         Task<MealDetail> GetMeal(int id);
         Task<List<MealListItem>> GetMeals();
+        Task<MealDetail> GetRandomMeal();
     }
 }

@@ -41,7 +41,7 @@ namespace MealMe.Services.Services.MealServices
 
         public async Task<MealDetail> GetMeal(int id)
         {
-            var meal = await _context.Meals.Include(m => m.Ingredients).FirstOrDefaultAsync(x=>x.Id == id);
+            var meal = await _context.Meals.FirstOrDefaultAsync(x=>x.Id == id);
             if(meal is null)
                 return new MealDetail();
             
@@ -65,6 +65,17 @@ namespace MealMe.Services.Services.MealServices
             var conversion = _mapper.Map<MealEdit,Meal>(model, meal);
             _context.Meals.Update(conversion);
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<MealDetail> GetRandomMeal()
+        {
+            var list = await _context.Meals.ToListAsync();
+            Random rnd = new Random();
+            int index = rnd.Next(list.Count());
+            var meal = list[index];
+
+            var MealDetail = _mapper.Map<MealDetail>(meal);
+            return MealDetail;
         }
     }
 }

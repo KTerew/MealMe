@@ -26,12 +26,12 @@ namespace MealMe.Data.Entities
         [Required]
         public int PrepTime { get; set; }
 
-        [ForeignKey("Cuisine")]
-        public int CuisineId { get; set; }
+        public int? CuisineId { get; set; }
         
-        public virtual Cuisine Cuisine { get; set; }
+        [ForeignKey(nameof(CuisineId))]
+        public virtual Cuisine? Cuisine { get; set; }
         
-        public virtual List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+        // public virtual List<Ingredient> Ingredients { get; set; }
 
         // public double Price
         // {

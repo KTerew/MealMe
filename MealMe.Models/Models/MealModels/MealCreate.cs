@@ -22,6 +22,6 @@ namespace MealMe.Models.Models.MealModels
         [Required]
         public int PrepTime { get; set; }
 
-        public int CuisineId { get; set; }
+        public int? CuisineId { get; set; }
     }
 }

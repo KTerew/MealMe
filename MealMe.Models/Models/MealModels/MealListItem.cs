@@ -11,11 +11,5 @@ namespace MealMe.Models.Models.MealModels
         public int Id { get; set; }
 
         public string Name { get; set; }
-
-        public string Description { get; set; }
-
-        public int Calories { get; set; }
-
-        public int PrepTime { get; set; }
     }
 }
