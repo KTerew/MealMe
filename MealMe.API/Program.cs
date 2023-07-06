@@ -1,4 +1,6 @@
 using MealMe.Data.MealMeContext;
+using MealMe.Services.Services.CuisineServices;
+using MealMe.Services.Services.MappingConfigurations;
 using MealMe.Services.Configurations;
 using MealMe.Services.Services.MealServices;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +16,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MealMeDBContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-builder.Services.AddAutoMapper(typeof(MappingConfigurations));
+builder.Services.AddScoped<ICuisineServices,CuisineServices>();
 builder.Services.AddScoped<IMealServices,MealServices>();
-
+builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
