@@ -8,6 +8,12 @@ namespace MealMe.Services.Services.IngredientServices
 {
     public interface IIngredientServices
     {
-        
+        Task<bool> IngredientCreate(IngredientCreate model);
+
+        Task<bool>EditIngredient(IngredientEdit model);
+
+        Task<bool>DeleteCategory(int id);
+
+        Task<bool>IngredientDetail(int id);
     }
 }
