@@ -1,6 +1,8 @@
 using MealMe.Data.MealMeContext;
 using MealMe.Services.Services.CuisineServices;
 using MealMe.Services.Services.MappingConfigurations;
+using MealMe.Services.Configurations;
+using MealMe.Services.Services.MealServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +18,6 @@ builder.Services.AddDbContext<MealMeDBContext>(options => {
 });
 builder.Services.AddScoped<ICuisineServices,CuisineServices>();
 builder.Services.AddAutoMapper(typeof(MappingConfiguration));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
