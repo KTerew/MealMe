@@ -17,6 +17,7 @@ builder.Services.AddDbContext<MealMeDBContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddScoped<ICuisineServices,CuisineServices>();
+builder.Services.AddScoped<IMealServices,MealServices>();
 builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 var app = builder.Build();
 
