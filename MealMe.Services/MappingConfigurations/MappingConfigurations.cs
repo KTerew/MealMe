@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using MealMe.Data.Entities;
 using MealMe.Models.Models.CuisineModels;
+using MealMe.Models.Models.MealModels;
 
 namespace MealMe.Services.Services.MappingConfigurations
 {
@@ -16,6 +17,11 @@ namespace MealMe.Services.Services.MappingConfigurations
             CreateMap<Cuisine,CuisineEdit>().ReverseMap();
             CreateMap<Cuisine,CuisineDetail>().ReverseMap();
             CreateMap<Cuisine,CuisineListItem>().ReverseMap();
+
+            CreateMap<Meal, MealCreate>().ReverseMap();
+            CreateMap<Meal, MealEdit>().ReverseMap();
+            CreateMap<Meal, MealDetail>().ReverseMap();
+            CreateMap<Meal, MealListItem>().ReverseMap();
         }
     }
 }
