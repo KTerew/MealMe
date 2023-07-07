@@ -20,7 +20,6 @@ namespace MealMe.Models.Models.IngredientModels
         [Required]
         public int Quantity {get; set;}
         [Required]
-        [ForeignKey(nameof(MealsId))]
         public int MealsId {get; set;}
     }
 }

@@ -14,5 +14,7 @@ namespace MealMe.Models.Models.IngredientModels
         public double Price {get; set;}
         [Required]
         public int Quantity {get; set;}
+        [Required]
+        public int MealsId {get; set;}
     }
 }
