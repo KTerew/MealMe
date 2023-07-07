@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MealMe.Data.Migrations
 {
     [DbContext(typeof(MealMeDBContext))]
-    [Migration("20230630013519_INIT")]
-    partial class INIT
+    [Migration("20230706231635_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,6 +53,35 @@ namespace MealMe.Data.Migrations
                     b.ToTable("Cuisines");
                 });
 
+            modelBuilder.Entity("MealMe.Data.Entities.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MealsId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MealsId");
+
+                    b.ToTable("Ingredients");
+                });
+
             modelBuilder.Entity("MealMe.Data.Entities.Meal", b =>
                 {
                     b.Property<int>("Id")
@@ -85,6 +114,17 @@ namespace MealMe.Data.Migrations
                     b.HasIndex("CuisineId");
 
                     b.ToTable("Meals");
+                });
+
+            modelBuilder.Entity("MealMe.Data.Entities.Ingredient", b =>
+                {
+                    b.HasOne("MealMe.Data.Entities.Meal", "Meal")
+                        .WithMany()
+                        .HasForeignKey("MealsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Meal");
                 });
 
             modelBuilder.Entity("MealMe.Data.Entities.Meal", b =>

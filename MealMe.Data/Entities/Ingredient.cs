@@ -20,7 +20,8 @@ namespace MealMe.Data.Entities
 
         public int Quantity {get; set;}
 
-        [ForeignKey(nameof(MealsId))]
         public int MealsId {get; set;}
+        [ForeignKey(nameof(MealsId))]
+        public virtual Meal Meal { get; set; }
     }
 }

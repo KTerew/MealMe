@@ -5,7 +5,7 @@
 namespace MealMe.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddingIngredientTable : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,6 +26,28 @@ namespace MealMe.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Meals",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Calories = table.Column<int>(type: "int", nullable: false),
+                    PrepTime = table.Column<int>(type: "int", nullable: false),
+                    CuisineId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Meals", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Meals_Cuisines_CuisineId",
+                        column: x => x.CuisineId,
+                        principalTable: "Cuisines",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Ingredients",
                 columns: table => new
                 {
@@ -39,17 +61,36 @@ namespace MealMe.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ingredients", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Ingredients_Meals_MealsId",
+                        column: x => x.MealsId,
+                        principalTable: "Meals",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Ingredients_MealsId",
+                table: "Ingredients",
+                column: "MealsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Meals_CuisineId",
+                table: "Meals",
+                column: "CuisineId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Cuisines");
+                name: "Ingredients");
 
             migrationBuilder.DropTable(
-                name: "Ingredients");
+                name: "Meals");
+
+            migrationBuilder.DropTable(
+                name: "Cuisines");
         }
     }
 }

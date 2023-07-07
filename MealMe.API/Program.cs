@@ -1,9 +1,9 @@
 using MealMe.Data.MealMeContext;
 using MealMe.Services.Services.CuisineServices;
-using MealMe.Services.Services.MappingConfigurations;
 using MealMe.Services.Configurations;
 using MealMe.Services.Services.MealServices;
 using Microsoft.EntityFrameworkCore;
+using MealMe.Services.Services.IngredientServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +18,10 @@ builder.Services.AddDbContext<MealMeDBContext>(options => {
 });
 builder.Services.AddScoped<ICuisineServices,CuisineServices>();
 builder.Services.AddScoped<IMealServices,MealServices>();
-builder.Services.AddAutoMapper(typeof(MappingConfiguration));
+builder.Services.AddAutoMapper(typeof(MappingConfigurations));
+builder.Services.AddScoped<IIngredientServices,IngredientServices>();
+//builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,7 +32,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+//app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
