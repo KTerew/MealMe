@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MealMe.Models.Models.IngredientModels;
+using MealMe.Services.Services.IngredientServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MealMe.API.Controllers
@@ -20,7 +22,7 @@ namespace MealMe.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateIngredient(IngredientCreate model)
         {
-            bool createIngredient = await _ingredientServices.CreateMeal(model);
+            bool createIngredient = await _ingredientServices.IngredientCreate(model);
             return Ok(createIngredient);
         }
 
@@ -39,6 +41,7 @@ namespace MealMe.API.Controllers
         }
 
         [HttpGet]
+        [Route("{id:int}")]
         public async Task<IActionResult> GetIngredients(int id)
         {
             IngredientDetail getIngredient = await _ingredientServices.GetIngredient(id);
@@ -48,7 +51,7 @@ namespace MealMe.API.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateIngredients(IngredientEdit model)
         {
-            bool updateIngredient = await _ingredientServices.UpdateIngredient(model);
+            bool updateIngredient = await _ingredientServices.EditIngredient(model);
             return Ok(updateIngredient);
         }
     }

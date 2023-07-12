@@ -12,8 +12,9 @@ namespace MealMe.Services.Services.IngredientServices
 
         Task<bool>EditIngredient(IngredientEdit model);
 
-        Task<bool>DeleteCategory(int id);
+        Task<bool>DeleteIngredient(int id);
 
-        Task<bool>IngredientDetail(int id);
+        Task <IngredientDetail>GetIngredient(int id);
+        Task<List<IngredientListItem>>GetIngredients();
     }
 }

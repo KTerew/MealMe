@@ -12,7 +12,7 @@ namespace MealMe.Data.MealMeContext
         public MealMeDBContext(DbContextOptions options) : base(options) {}
 
         public DbSet<Meal> Meals { get; set; }
-        // public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Cuisine> Cuisines { get; set; }
     }
 }

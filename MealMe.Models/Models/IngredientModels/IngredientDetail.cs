@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using MealMe.Models.Models.MealModels;
 
 namespace MealMe.Models.Models.IngredientModels
 {
@@ -18,8 +19,6 @@ namespace MealMe.Models.Models.IngredientModels
         public double Price {get; set;}
 
         public int Quantity {get; set;}
-
-        [ForeignKey(nameof(MealsId))]
-        public int MealsId {get; set;}
+        public MealDetail Meal {get; set;}
     }
 }
