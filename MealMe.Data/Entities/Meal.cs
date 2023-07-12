@@ -31,22 +31,22 @@ namespace MealMe.Data.Entities
         [ForeignKey(nameof(CuisineId))]
         public virtual Cuisine? Cuisine { get; set; }
         
-        // public virtual List<Ingredient> Ingredients { get; set; }
+        public virtual List<Ingredient> Ingredients { get; set; }
 
-        // public double Price
-        // {
-        //     get
-        //     {
-        //         if(Ingredients.Count == 0)
-        //             return 0;
+        public double Price
+        {
+            get
+            {
+                if(Ingredients.Count == 0)
+                    return 0;
 
-        //         double total = 0.0;
-        //         foreach (Ingredient ingredient in Ingredients)
-        //         {
-        //             total += ingredient.Price;
-        //         }
-        //         return total;
-        //     }
-        // }
+                double total = 0.0;
+                foreach (Ingredient ingredient in Ingredients)
+                {
+                    total += ingredient.Price;
+                }
+                return total;
+            }
+        }
     }
 }
