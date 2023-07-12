@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using MealMe.Data.Entities;
+using MealMe.Models.Models.CuisineModels;
+using MealMe.Models.Models.IngredientModels;
 
 namespace MealMe.Models.Models.MealModels
 {
@@ -19,9 +21,9 @@ namespace MealMe.Models.Models.MealModels
 
         public int PrepTime { get; set; }
 
-        public virtual Cuisine Cuisine { get; set; }
+        public virtual CuisineListItem Cuisine { get; set; }
 
-        public virtual List<Ingredient> Ingredients { get; set; }
+        public virtual List<IngredientListItem> Ingredients { get; set; }
 
         public double Price
         {
@@ -31,7 +33,7 @@ namespace MealMe.Models.Models.MealModels
                     return 0;
 
                 double total = 0.0;
-                foreach (Ingredient ingredient in Ingredients)
+                foreach (IngredientListItem ingredient in Ingredients)
                 {
                     total += ingredient.Price;
                 }

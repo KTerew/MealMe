@@ -41,7 +41,7 @@ namespace MealMe.Services.Services.MealServices
 
         public async Task<MealDetail> GetMeal(int id)
         {
-            var meal = await _context.Meals.FirstOrDefaultAsync(x=>x.Id == id);
+            var meal = await _context.Meals.Include(c=>c.Cuisine).Include(i=>i.Ingredients).FirstOrDefaultAsync(x=>x.Id == id);
             if(meal is null)
                 return new MealDetail();
             
