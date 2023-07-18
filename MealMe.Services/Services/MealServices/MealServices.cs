@@ -69,7 +69,7 @@ namespace MealMe.Services.Services.MealServices
 
         public async Task<MealDetail> GetRandomMeal()
         {
-            var list = await _context.Meals.Include(c=>c.Cuisine).ToListAsync();
+            var list = await _context.Meals.Include(c=>c.Cuisine).Include(i=>i.Ingredients).ToListAsync();
             Random rnd = new Random();
             int index = rnd.Next(list.Count());
             var meal = list[index];
